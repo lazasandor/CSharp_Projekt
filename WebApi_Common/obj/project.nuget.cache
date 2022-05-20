@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sXmNz2chi6cnT6ff/p1OSkQlchaHM1YTW+TPQTiGWnDOF19f0Ue0k73fXM1yz8wQyA8WHCb0ibz5E/cFFeJomw==",
+  "dgSpecHash": "YGP0DaCzVKYgAnI1C+uWESciDB1ABR79wMwBmF9ilTdHfkmi+IMt4VOn1tbFdcspsND1r2J/nD6Be4NZFEJPoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Common\\WebApi_Common.csproj",
+  "projectFilePath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
