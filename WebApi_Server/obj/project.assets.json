@@ -1866,11 +1866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Server\\WebApi_Server.csproj",
+      "projectUniqueName": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
       "projectName": "WebApi_Server",
-      "projectPath": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Server\\WebApi_Server.csproj",
+      "projectPath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
       "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Server\\obj\\",
+      "outputPath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

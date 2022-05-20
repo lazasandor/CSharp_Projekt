@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
+    "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
+    "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "projectUniqueName": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
         "projectName": "WebApi_Client_Jobs",
-        "projectPath": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "projectPath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
         "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lazas\\Desktop\\csharp\\WebApi_Server\\WebApi_Client_Jobs\\obj\\",
+        "outputPath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
