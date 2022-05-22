@@ -10,24 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WebApi_Client_Workshop
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ChangeJobStatusWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ChangeJobStatusWindow : Window
     {
-        public MainWindow()
+        public ChangeJobStatusWindow()
         {
             InitializeComponent();
         }
 
-        private void ListView_SelectionChanged(object sender, RoutedEventArgs e)
+        private void RegisteredJob_ButtonClick(object sender, RoutedEventArgs e)
         {
 
         }
+        private void UnderWorking_ButtonClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void JobDone_ButtonClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

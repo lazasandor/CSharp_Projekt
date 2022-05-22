@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "isbZ+n+jGea5X7ngTFMOaRe+GKNdrHYm03NJUpXenhRmQCu0QM+Yyd3rIq/4pFkdJlPicHIo8x3zsn8KmgWXeA==",
+  "dgSpecHash": "blMKRJWPKx6LtmQpSKQCelpnGbV+ZZfF5VrHhevbp8Vvx9phd4S9xUC24kW6aRmbgBSZFIOU/nVMm8QYnJIU6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
+  "projectFilePath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lazas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lazas\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

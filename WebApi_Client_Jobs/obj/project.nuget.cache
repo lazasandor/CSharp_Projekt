@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X+Ke2KUcD1uH0ESZjv2cLVqN0Gt6rM21aJWT3tYrnTUsD43JCfaQ+7e5ALhoj4DqcLzTIidsw3kdv+kYIf4b6w==",
+  "dgSpecHash": "L06ZSwPs7rX02xrGeHZAagBJbe5G/yyaLIFzuqe+ZXxpaimMLl9xoxSCxEqlw/mbm2L3g9ZmRamsB9FjYlp9bQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+  "projectFilePath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

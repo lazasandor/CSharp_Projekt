@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {}
+    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+        "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
         "projectName": "WebApi_Common",
-        "projectPath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+        "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
         "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lazas\\Source\\Repos\\CSharp_Projekt\\WebApi_Common\\obj\\",
+        "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
