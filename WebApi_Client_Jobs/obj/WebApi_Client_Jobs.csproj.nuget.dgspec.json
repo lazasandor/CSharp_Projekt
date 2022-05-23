@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
+    "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
+    "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
         "projectName": "WebApi_Client_Jobs",
-        "projectPath": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "projectPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
         "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
+        "outputPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +39,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +65,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\dobiv\\.dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
