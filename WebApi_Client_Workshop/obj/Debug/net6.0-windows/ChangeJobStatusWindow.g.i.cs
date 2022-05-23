@@ -53,7 +53,7 @@ namespace WebApi_Client_Workshop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WebApi_Client_Workshop;V1.0.0.0;component/changejobstatuswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WebApi_Client_Workshop;component/changejobstatuswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ChangeJobStatusWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
