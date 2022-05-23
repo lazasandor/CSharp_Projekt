@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "projectName": "WebApi_Client_Jobs",
+        "projectPath": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\dobiv\\.dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
