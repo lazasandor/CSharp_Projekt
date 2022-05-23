@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj": {}
+    "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj": {
+    "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
+        "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
         "projectName": "WebApi_Client_Workshop",
-        "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
-        "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Workshop\\obj\\",
+        "projectPath": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
+        "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dobiv\\Desktop\\Charsp\\CSharp_Projekt\\WebApi_Client_Workshop\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lazas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\dobiv\\.dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

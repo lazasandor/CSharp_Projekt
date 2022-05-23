@@ -12,12 +12,12 @@
             <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
 
-        <ListView Grid.Row="0" Margin="10" SelectionMode="Single" x:Name="OfficeClient_JobList" SelectionChanged="ListView_SelectionChanged">
+        <ListView Grid.Row="0" Margin="10" SelectionMode="Single" x:Name="OfficeClientJobList" SelectionChanged="ListView_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Név" Width="200" x:Name="Name"/>
                     <GridViewColumn Header="Típus" Width="150" x:Name="Type" />
-                    <GridViewColumn Header="Rendszám" Width="100" x:Name="RegNumber" />
+                    <GridViewColumn Header="Rendszám" Width="100" x:Name="RegNumberGrid" />
                     <GridViewColumn Header="Dátum" Width="200" x:Name="Date" />
                     <GridViewColumn Header="Hiba leírás" Width="350" x:Name="TechnicalFailure" />
                     <GridViewColumn Header="Állapot" Width="200" x:Name="Phase" />
@@ -100,7 +100,7 @@
                         <Label Content="Rövid hibaleírás:" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                     <Grid Grid.Column="1">
-                        <TextBox x:Name="TechnicalFailure" Margin="10,10,10,10"/>
+                        <TextBox x:Name="TechnicalFailureDesc" Margin="10,10,10,10"/>
                     </Grid>
                 </Grid>
                 <Grid Grid.Row="1">
@@ -113,9 +113,9 @@
                     </Grid>
                     <Grid Grid.Column="1">
                         <ComboBox Margin="20,20,20,20" FontSize="15">
-                            <ComboBoxItem x:Name="ComboBox_RegisteredJob">Felvett munka</ComboBoxItem>
-                            <ComboBoxItem x:Name="ComboBox_UnderWorking">Elvégzés alatt</ComboBoxItem>
-                            <ComboBoxItem x:Name="ComboBox_JobDone">Befejezett munka</ComboBoxItem>
+                            <ComboBoxItem x:Name="ComboBoxRegisteredJob">Felvett munka</ComboBoxItem>
+                            <ComboBoxItem x:Name="ComboBoxUnderWorking">Elvégzés alatt</ComboBoxItem>
+                            <ComboBoxItem x:Name="ComboBoxJobDone">Befejezett munka</ComboBoxItem>
                         </ComboBox>
                     </Grid>
                 </Grid>
