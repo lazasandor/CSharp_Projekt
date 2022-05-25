@@ -16,7 +16,6 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
-        services.AddDbContext<JobContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ServerDB")));
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
