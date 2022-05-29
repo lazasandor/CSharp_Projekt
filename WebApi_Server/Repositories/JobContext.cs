@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
-using WebApi_Server.Models;
+using WebApi_Common.Models;
 
 namespace WebApi_Server.Repositories;
 

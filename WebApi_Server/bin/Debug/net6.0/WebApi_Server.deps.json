@@ -12,7 +12,8 @@
           "Microsoft.EntityFrameworkCore": "6.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.5",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.5"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.5",
+          "WebApi_Common": "1.0.0"
         },
         "runtime": {
           "WebApi_Server.dll": {}
@@ -2303,6 +2304,11 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "WebApi_Common/1.0.0": {
+        "runtime": {
+          "WebApi_Common.dll": {}
+        }
       }
     }
   },
@@ -3564,6 +3570,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "WebApi_Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

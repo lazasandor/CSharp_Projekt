@@ -679,11 +679,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
+      "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
       "projectName": "WebApi_Client_Workshop",
-      "projectPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
+      "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Workshop\\WebApi_Client_Workshop.csproj",
       "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Client_Workshop\\obj\\",
+      "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Workshop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",

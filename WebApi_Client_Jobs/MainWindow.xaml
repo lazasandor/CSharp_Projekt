@@ -112,7 +112,7 @@
                         <Label Content="Állapot:" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Grid>
                     <Grid Grid.Column="1">
-                        <ComboBox Margin="20,20,20,20" FontSize="15">
+                        <ComboBox x:Name="ComboBox" Margin="20,20,20,20" FontSize="15">
                             <ComboBoxItem x:Name="ComboBoxRegisteredJob">Felvett munka</ComboBoxItem>
                             <ComboBoxItem x:Name="ComboBoxUnderWorking">Elvégzés alatt</ComboBoxItem>
                             <ComboBoxItem x:Name="ComboBoxJobDone">Befejezett munka</ComboBoxItem>

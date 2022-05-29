@@ -3144,6 +3144,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "WebApi_Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/WebApi_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi_Common.dll": {}
+        }
       }
     }
   },
@@ -9871,6 +9881,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "WebApi_Common/1.0.0": {
+      "type": "project",
+      "path": "../WebApi_Common/WebApi_Common.csproj",
+      "msbuildProject": "../WebApi_Common/WebApi_Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9879,7 +9894,8 @@
       "Microsoft.EntityFrameworkCore >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.5"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.5",
+      "WebApi_Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9888,11 +9904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
+      "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
       "projectName": "WebApi_Server",
-      "projectPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
+      "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
       "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Server\\obj\\",
+      "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9908,7 +9924,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+              "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

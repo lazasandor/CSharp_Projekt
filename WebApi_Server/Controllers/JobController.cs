@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
-using WebApi_Server.Models;
+using WebApi_Common.Models;
 using WebApi_Server.Repositories;
 
 

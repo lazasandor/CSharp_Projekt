@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {}
+    "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+    "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+        "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
         "projectName": "WebApi_Common",
-        "projectPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+        "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
         "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dobiv\\Desktop\\Új mappa\\CSharp_Projekt\\WebApi_Common\\obj\\",
+        "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,14 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
