@@ -29,11 +29,23 @@ namespace WebApi_Client_Jobs
             InitializeComponent();
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void UpdateJobsToList()
         {
-            throw new NotImplementedException();
+           var jobs = DataProvider.GetJobs();
+           DataGrid.ItemsSource = jobs;
         }
 
+        /*
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedJob = OfficeClientJobList.SelectedItem as Job;
+
+            if (selectedJob != null)
+            {
+                
+            }
+        }
+        */
         private void Modify_ButtonClick(object sender, RoutedEventArgs e)
         {
             throw new NotImplementedException();
@@ -89,6 +101,11 @@ namespace WebApi_Client_Jobs
             }
 
             return true;
+        }
+
+        private void OfficeClientJobList_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateJobsToList();
         }
     }
 }
