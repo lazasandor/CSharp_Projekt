@@ -57,3 +57,41 @@ C:\Users\dobiv\Desktop\Új mappa\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug
 C:\Users\dobiv\Desktop\Új mappa\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.pdb
 C:\Users\dobiv\Desktop\Új mappa\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.genruntimeconfig.cache
 C:\Users\dobiv\Desktop\Új mappa\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\ref\WebApi_Client_Workshop.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Client_Workshop.exe
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Client_Workshop.deps.json
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Client_Workshop.runtimeconfig.json
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Client_Workshop.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Client_Workshop.pdb
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.csproj.AssemblyReference.cache
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\ChangeJobStatusWindow.g.cs
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop_MarkupCompile.cache
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop_MarkupCompile.lref
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\ChangeJobStatusWindow.baml
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.g.resources
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.AssemblyInfoInputs.cache
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.AssemblyInfo.cs
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.csproj.CoreCompileInputs.cache
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.csproj.CopyComplete
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\refint\WebApi_Client_Workshop.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.pdb
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\WebApi_Client_Workshop.genruntimeconfig.cache
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\ref\WebApi_Client_Workshop.dll
