@@ -8,22 +8,11 @@
         Title="MainWindow" Height="600" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="400"/>
-            <RowDefinition Height="200"/>
+            <RowDefinition Height="408"/>
+            <RowDefinition Height="192"/>
         </Grid.RowDefinitions>
 
-        <ListView Grid.Row="0" Margin="10" SelectionMode="Single" x:Name="OfficeClientJobList" SelectionChanged="ListView_SelectionChanged">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Név" Width="200" x:Name="Name"/>
-                    <GridViewColumn Header="Típus" Width="150" x:Name="Type" />
-                    <GridViewColumn Header="Rendszám" Width="100" x:Name="RegNumberGrid" />
-                    <GridViewColumn Header="Dátum" Width="200" x:Name="Date" />
-                    <GridViewColumn Header="Hiba leírás" Width="350" x:Name="TechnicalFailure" />
-                    <GridViewColumn Header="Állapot" Width="200" x:Name="Phase" />
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="DataGrid" HorizontalAlignment="Center" VerticalAlignment="Top" Height="600" Width="1200" Loaded="OfficeClientJobList_Loaded" IsReadOnly="True" Background="Transparent" Grid.RowSpan="2"/>
 
         <Grid Grid.Row="1" Margin="10,0,10,25">
             <Grid.ColumnDefinitions>
@@ -121,6 +110,6 @@
                 </Grid>
             </Grid>
         </Grid>
-        
+
     </Grid>
 </Window>
