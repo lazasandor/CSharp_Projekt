@@ -24,3 +24,15 @@ C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Common\obj\Debug\ne
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\refint\WebApi_Common.dll
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.pdb
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\ref\WebApi_Common.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\bin\Debug\net6.0\WebApi_Common.deps.json
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\bin\Debug\net6.0\WebApi_Common.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\bin\Debug\net6.0\WebApi_Common.pdb
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.csproj.AssemblyReference.cache
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.AssemblyInfoInputs.cache
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.AssemblyInfo.cs
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.csproj.CoreCompileInputs.cache
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\refint\WebApi_Common.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\WebApi_Common.pdb
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Common\obj\Debug\net6.0\ref\WebApi_Common.dll
