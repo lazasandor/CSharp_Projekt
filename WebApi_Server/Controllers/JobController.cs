@@ -41,7 +41,6 @@ namespace WebApi_Server.Controllers
         }
 
         [HttpPut("{id}")]
-
         public ActionResult Put(Job job, long id)
         {
             var dbjob = JobRepository.GetJob(id);
@@ -57,7 +56,6 @@ namespace WebApi_Server.Controllers
         }
 
         [HttpDelete("{id}")]
-
         public ActionResult Delete(long id)
         {
             var job = JobRepository.GetJob(id);

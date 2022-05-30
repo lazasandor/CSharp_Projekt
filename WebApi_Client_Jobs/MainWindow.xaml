@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebApi_Client_Jobs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1200">
+        Title="MainWindow" Height="700" Width="1280">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="408"/>
-            <RowDefinition Height="192"/>
+            <RowDefinition Height="399"/>
+            <RowDefinition Height="201"/>
         </Grid.RowDefinitions>
 
-        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="DataGrid" HorizontalAlignment="Center" VerticalAlignment="Top" Height="600" Width="1200" Loaded="OfficeClientJobList_Loaded" IsReadOnly="True" Background="Transparent" Grid.RowSpan="2"/>
+        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="DataGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="388" Width="1260" SelectionChanged="DataGrid_SelectionChanged" Loaded="OfficeClientJobList_Loaded" IsReadOnly="True" Background="Transparent"/>
 
-        <Grid Grid.Row="1" Margin="10,0,10,25">
+        <Grid Grid.Row="1" Margin="47,65,-27,-40">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="400"/>
                 <ColumnDefinition Width="400"/>
@@ -31,6 +31,7 @@
             </Grid>
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -70,6 +71,18 @@
                     </Grid>
                     <Grid Grid.Column="1">
                         <TextBox x:Name="RegNumber" Margin="10,10,150,10"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.3*"/>
+                        <ColumnDefinition Width="0.7*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Label Content="ID:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" Visibility="Hidden"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <TextBox x:Name="ID" Margin="10,10,225,10" Visibility="Hidden"/>
                     </Grid>
                 </Grid>
             </Grid>
