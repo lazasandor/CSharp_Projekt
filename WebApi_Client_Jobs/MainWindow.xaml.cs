@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WebApi_Common.Models;
 using WebApi_Client_Jobs.DataProviders;
+using System.Text.RegularExpressions;
 
 namespace WebApi_Client_Jobs
 {
@@ -39,7 +40,7 @@ namespace WebApi_Client_Jobs
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedJob = OfficeClientJobList.SelectedItem as Job;
-
+                            
             if (selectedJob != null)
             {
                 
@@ -75,6 +76,11 @@ namespace WebApi_Client_Jobs
                 MessageBox.Show("A név mező nem lehet üres!");
                 return false;
             }
+            else if (!Regex.Match(FullName.Text, "^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$").Success)
+            {
+                MessageBox.Show("Megadott név formátuma nem megfelelő!");
+                return false;
+            }
 
             if (string.IsNullOrEmpty(CarType.Text))
             {
@@ -85,6 +91,12 @@ namespace WebApi_Client_Jobs
             if (string.IsNullOrEmpty(RegNumber.Text))
             {
                 MessageBox.Show("A rendszám mező nem lehet üres!");
+                return false;
+            }
+
+            if (!Regex.Match(RegNumber.Text, "^[A-Z]{3}-[0-9]{3}$").Success && !Regex.Match(RegNumber.Text, "^[A-Z]{2} [A-Z]{2}-[0-9]{3}$").Success)
+            {
+                MessageBox.Show("Elfogadott rendszám formátum: XXX-123 vagy XX XX-123!");
                 return false;
             }
 
