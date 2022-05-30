@@ -8,14 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataProviders\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi_Common\WebApi_Common.csproj" />
+    <ProjectReference Include="..\WebApi_Server\WebApi_Server.csproj" />
+    
+    
   </ItemGroup>
 
 </Project>

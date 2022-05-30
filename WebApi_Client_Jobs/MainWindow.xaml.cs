@@ -74,7 +74,7 @@ namespace WebApi_Client_Jobs
                 DataProvider.CreateJob(_job);
 
             }
-            UpdateJobsToList(); 
+            UpdateJobsToList();
         }
 
         private bool ValidateJob()

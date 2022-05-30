@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WebApi_Common.Models;
 
 namespace WebApi_Client_Workshop
 {
@@ -19,23 +20,63 @@ namespace WebApi_Client_Workshop
     /// </summary>
     public partial class ChangeJobStatusWindow : Window
     {
+        private string _status;
+        private Job _job;
         public ChangeJobStatusWindow()
         {
             InitializeComponent();
         }
 
-        private void RegisteredJob_ButtonClick(object sender, RoutedEventArgs e)
+        private void JobStatusNew_ButtonClick(object sender, RoutedEventArgs e)
         {
+            _status = "Felvett munka";
+            ChangeStatusToSelected(_job);
+            
+            
+        }
+        private void JobStatusWorking_ButtonClick(object sender, RoutedEventArgs e)
+        {
+            _status = "Elvégzés alatt";
+            ChangeStatusToSelected(_job);
+           
 
         }
-        private void UnderWorking_ButtonClick(object sender, RoutedEventArgs e)
-        {
 
+        private void JobStatusDone_ButtonClick(object sender, RoutedEventArgs e)
+        {    
+            _status = "Befejezett munka";
+            ChangeStatusToSelected(_job);
+            
         }
-        private void JobDone_ButtonClick(object sender, RoutedEventArgs e)
-        {
 
+        public string StatusReturn()
+        {
+            return _status;
         }
 
+        internal void ChangeStatusToSelected(Job job)
+        {   
+            _job = job;
+            using (var context = new WebApi_Server.Repositories.JobContext())
+            {
+                var selected = job;
+                if (selected != null)
+                {
+                    var id = selected.Id;
+                    var entity = context.Jobs.FirstOrDefault(item => item.Id == id);
+                    if (entity != null)
+                    {
+                        var newStatus = _status;
+                        if (newStatus != null)
+                        {
+                            entity.Status = newStatus;
+                            context.SaveChanges();
+                            Close();
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }

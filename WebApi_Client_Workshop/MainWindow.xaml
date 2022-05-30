@@ -12,18 +12,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ListView Grid.Row="0" Margin="10" x:Name="WorkPlaceClient_JobList" SelectionMode="Single" SelectionChanged="ListView_SelectionChanged">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Név" Width="200" x:Name="Name"/>
-                    <GridViewColumn Header="Típus" Width="150" x:Name="Type" />
-                    <GridViewColumn Header="Rendszám" Width="100" x:Name="RegNumber" />
-                    <GridViewColumn Header="Dátum" Width="200" x:Name="Date" />
-                    <GridViewColumn Header="Hiba leírás" Width="350" x:Name="TechnicalFailure" />
-                    <GridViewColumn Header="Állapot" Width="200" x:Name="Phase" />
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="WorkShop_DataGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="10,10,10,10" SelectionChanged="WorkShop_DataGrid_SelectionChanged" Loaded="WorkshopClientJobList_Loaded" IsReadOnly="True" Background="Transparent" SelectedItem="{Binding WorkshopDataGrid_SelectedItem, Mode=TwoWay}"/>
+
 
     </Grid>
 </Window>

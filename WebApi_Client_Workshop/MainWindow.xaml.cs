@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WebApi_Client_Workshop.DataProviders;
+using WebApi_Common.Models;
+
 
 namespace WebApi_Client_Workshop
 {
@@ -20,14 +23,32 @@ namespace WebApi_Client_Workshop
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly Job _job;
         public MainWindow()
         {
+            _job = new Job();
             InitializeComponent();
         }
 
-        private void ListView_SelectionChanged(object sender, RoutedEventArgs e)
+        public void UpdateJobsToList()
         {
+            var jobs = DataProviderWorkshop.GetJobs();
+            WorkShop_DataGrid.ItemsSource = jobs;
+        }
 
+        private void WorkshopClientJobList_Loaded(object sender, RoutedEventArgs e)
+        {
+            UpdateJobsToList();
+        }
+
+        private void WorkShop_DataGrid_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            var job = WorkShop_DataGrid.SelectedItem as Job;
+            ChangeJobStatusWindow window = new ChangeJobStatusWindow();
+            window.Show();
+            window.ChangeStatusToSelected(job);
+            //window.Close();
+            UpdateJobsToList();
         }
     }
 }
