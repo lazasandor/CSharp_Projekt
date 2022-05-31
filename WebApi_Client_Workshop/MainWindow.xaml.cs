@@ -43,12 +43,19 @@ namespace WebApi_Client_Workshop
 
         private void WorkShop_DataGrid_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            var job = WorkShop_DataGrid.SelectedItem as Job;
-            ChangeJobStatusWindow window = new ChangeJobStatusWindow();
-            window.Show();
-            window.ChangeStatusToSelected(job);
-            //window.Close();
-            UpdateJobsToList();
+            var selectedJob = WorkShop_DataGrid.SelectedItem as Job;
+
+            if (selectedJob != null)
+            {
+                var window = new ChangeJobStatusWindow(selectedJob);
+                if (window.ShowDialog() ?? false)
+                {
+                    UpdateJobsToList();
+                }
+            }
+
+            
+            
         }
     }
 }
