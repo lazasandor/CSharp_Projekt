@@ -22,23 +22,30 @@ namespace WebApi_Client_Workshop
     {
         private string _status;
         private Job _job;
-        public ChangeJobStatusWindow()
+        public ChangeJobStatusWindow(Job job)
         {
             InitializeComponent();
+
+            if (job != null)
+            {
+                _job = job;
+            }
         }
 
         private void JobStatusNew_ButtonClick(object sender, RoutedEventArgs e)
         {
             _status = "Felvett munka";
             ChangeStatusToSelected(_job);
-            
-            
+            DialogResult = true;
+            Close();
+
         }
         private void JobStatusWorking_ButtonClick(object sender, RoutedEventArgs e)
         {
             _status = "Elvégzés alatt";
             ChangeStatusToSelected(_job);
-           
+            DialogResult = true;
+            Close();
 
         }
 
@@ -46,32 +53,24 @@ namespace WebApi_Client_Workshop
         {    
             _status = "Befejezett munka";
             ChangeStatusToSelected(_job);
-            
-        }
-
-        public string StatusReturn()
-        {
-            return _status;
+            DialogResult = true;
+            Close();
         }
 
         internal void ChangeStatusToSelected(Job job)
         {   
-            _job = job;
             using (var context = new WebApi_Server.Repositories.JobContext())
             {
-                var selected = job;
-                if (selected != null)
+                if (job != null)
                 {
-                    var id = selected.Id;
+                    var id = job.Id;
                     var entity = context.Jobs.FirstOrDefault(item => item.Id == id);
                     if (entity != null)
                     {
-                        var newStatus = _status;
-                        if (newStatus != null)
+                        if (_status != null)
                         {
-                            entity.Status = newStatus;
-                            context.SaveChanges();
-                            Close();
+                            entity.Status = _status;
+                            context.SaveChanges(); 
                         }
 
                     }
