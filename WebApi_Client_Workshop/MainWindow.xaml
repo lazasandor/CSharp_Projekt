@@ -12,7 +12,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="WorkShop_DataGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="10,10,10,10" SelectionChanged="WorkShop_DataGrid_SelectionChanged" Loaded="WorkshopClientJobList_Loaded" IsReadOnly="True" Background="Transparent" SelectedItem="{Binding WorkshopDataGrid_SelectedItem, Mode=TwoWay}"/>
+        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="WorkShop_DataGrid" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="10,10,10,10" SelectionChanged="WorkShop_DataGrid_SelectionChanged" Loaded="WorkshopClientJobList_Loaded" IsReadOnly="True" Background="Transparent" SelectedItem="{Binding WorkshopDataGrid_SelectedItem, Mode=TwoWay}"/>
 
 
     </Grid>

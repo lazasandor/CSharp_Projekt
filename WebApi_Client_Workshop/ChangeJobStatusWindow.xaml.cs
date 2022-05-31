@@ -52,13 +52,24 @@ namespace WebApi_Client_Workshop
         private void JobStatusDone_ButtonClick(object sender, RoutedEventArgs e)
         {    
             _status = "Befejezett munka";
-            ChangeStatusToSelected(_job);
+            MessageBoxResult msgBoxResult = MessageBox.Show("A befejezett munka állapot kiválasztása után\na munka törlődik!\nBiztosan törli?",
+                "Igen",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Warning,
+                MessageBoxResult.No
+                );
+            if (msgBoxResult == MessageBoxResult.Yes)
+            {
+                DataProviders.DataProviderWorkshop.DeleteJob(_job.Id);
+            }
+            //ChangeStatusToSelected(_job);
             DialogResult = true;
             Close();
         }
 
         internal void ChangeStatusToSelected(Job job)
-        {   
+        {
+            
             using (var context = new WebApi_Server.Repositories.JobContext())
             {
                 if (job != null)

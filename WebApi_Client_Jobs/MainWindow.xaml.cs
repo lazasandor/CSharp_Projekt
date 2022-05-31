@@ -18,16 +18,18 @@ using System.Text.RegularExpressions;
 
 namespace WebApi_Client_Jobs
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
+        private long _selectedJobId;
+
         private readonly Job _job;
         public MainWindow()
         {
+           
             _job = new Job();
             InitializeComponent();
+            ComboBox.Text = "Felvett munka";
         }
 
         private void UpdateJobsToList()
@@ -38,24 +40,44 @@ namespace WebApi_Client_Jobs
 
         private void Modify_ButtonClick(object sender, RoutedEventArgs e)
         {
-            var jobs = DataProvider.GetJobs();
-            foreach (var item in jobs)
+            
+
+            using (var context = new WebApi_Server.Repositories.JobContext())
             {
-                if (item.Id == long.Parse(ID.Text))
+                var entity = context.Jobs.FirstOrDefault(item => item.Id == _selectedJobId);
+                if (entity != null)
                 {
+                    if (ComboBox.Text.Equals("Befejezett munka"))
+                    {
+                        MessageBoxResult msgBoxResult = MessageBox.Show("A befejezett munka állapot kiválasztása után\na munka törlődik!\nBiztosan törli?",
+                        "Igen",
+                        MessageBoxButton.YesNo,
+                        MessageBoxImage.Warning,
+                        MessageBoxResult.No
+                        );
+                        if (msgBoxResult == MessageBoxResult.Yes)
+                        {
+                            DataProvider.DeleteJob(entity.Id);
+                        }
+                        UpdateJobsToList();
+                        return;
+                    }
+
                     if (ValidateJob())
                     {
-                        item.Customer = FullName.Text;
-                        item.CarType = CarType.Text;
-                        item.LicensePlateNumber = RegNumber.Text;
-                        item.Description = TechnicalFailureDesc.Text;
-                        item.Status = ComboBox.Text;
-                        item.Date = DateTime.Now;
-
-                        DataProvider.UpdateJob(item);
+                        entity.Customer = FullName.Text;
+                        entity.CarType = CarType.Text;
+                        entity.LicensePlateNumber = RegNumber.Text;
+                        entity.Description = TechnicalFailureDesc.Text;
+                        entity.Status = ComboBox.Text;
+                        context.SaveChanges();
+                        MessageBox.Show("Munka sikeresen módosítva!");
                     }
+                    
                 }
             }
+            UpdateJobsToList();
+            ClearTexts();
         }
 
         private void AddNew_ButtonClick(object sender, RoutedEventArgs e)
@@ -63,7 +85,14 @@ namespace WebApi_Client_Jobs
 
             if (ValidateJob())
             {
-                
+
+                if (IsLicensePlateNumberExists(RegNumber.Text))
+                {
+                    MessageBox.Show("Ez a rendszám már szerepel az adatbázisban!");
+                    ClearTexts();
+                    return;
+                }
+
                 _job.Customer = FullName.Text;
                 _job.CarType = CarType.Text;
                 _job.LicensePlateNumber = RegNumber.Text;
@@ -72,9 +101,11 @@ namespace WebApi_Client_Jobs
                 _job.Date = DateTime.Now;
 
                 DataProvider.CreateJob(_job);
-
+                MessageBox.Show("Munka sikeresen felvételre került!");
             }
+            
             UpdateJobsToList();
+            ClearTexts();
         }
 
         private bool ValidateJob()
@@ -131,16 +162,38 @@ namespace WebApi_Client_Jobs
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selectedJob = DataGrid.SelectedItem as Job;
-            
             if (selectedJob != null)
-            {
-                ID.Text = selectedJob.Id.ToString();
+            {      
                 FullName.Text = selectedJob.Customer;
                 CarType.Text = selectedJob.CarType;
                 RegNumber.Text = selectedJob.LicensePlateNumber;
                 TechnicalFailureDesc.Text = selectedJob.Description;
                 ComboBox.Text = selectedJob.Status;
+                _selectedJobId = selectedJob.Id;
             }
+        }
+
+        private void ClearTexts()
+        {
+            FullName.Text = "";
+            CarType.Text = "";
+            RegNumber.Text = "";
+            TechnicalFailureDesc.Text = "";
+            ComboBox.Text = "Felvett munka";
+        }
+
+        private bool IsLicensePlateNumberExists(string plateNumber)
+        {
+            var jobs = DataProvider.GetJobs();
+
+            foreach (var job in jobs)
+            {
+                if (job.LicensePlateNumber.Equals(plateNumber))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
     }
