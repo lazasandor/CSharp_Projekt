@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\
 WebApi_Client_Jobs
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\App.xaml
-11407045341
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\App.xaml
+3-1531558016
 
 4-884451210
-384-1460351129
-MainWindow.xaml;
+3841437560258
+MainWindow.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 False
 

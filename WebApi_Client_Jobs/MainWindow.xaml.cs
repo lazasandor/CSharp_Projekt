@@ -196,5 +196,9 @@ namespace WebApi_Client_Jobs
             return false;
         }
 
+        public void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
