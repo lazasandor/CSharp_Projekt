@@ -9922,24 +9922,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lazas\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\dobiv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+      "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
       "projectName": "WebApi_Client_Jobs",
-      "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
-      "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
+      "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+      "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lazas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9953,11 +9948,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
-              "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
+            "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+              "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
             },
-            "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj": {
-              "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj"
+            "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj": {
+              "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj"
             }
           }
         }
