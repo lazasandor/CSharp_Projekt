@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lazas\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\dobiv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+      "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
       "projectName": "WebApi_Common",
-      "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
-      "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\obj\\",
+      "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+      "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lazas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
