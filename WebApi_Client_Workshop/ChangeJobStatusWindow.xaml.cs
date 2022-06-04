@@ -24,6 +24,8 @@ namespace WebApi_Client_Workshop
         private Job _job;
         public ChangeJobStatusWindow(Job job)
         {
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
             InitializeComponent();
 
             if (job != null)
