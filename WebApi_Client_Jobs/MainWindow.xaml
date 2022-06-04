@@ -10,8 +10,10 @@
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
-    <Border Background="#272560"
-            CornerRadius="15">
+    <Border x:Name="WindowBorder"
+            Background="#272560"
+            CornerRadius="15"
+            MouseDown="WindowBorder_MouseDown">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="225"/>
@@ -78,12 +80,13 @@
                 <ComboBox x:Name="ComboBox" 
                           Margin="20,20,10,20" 
                           HorizontalAlignment="Left"
+                          Background="#202560"
                           VerticalContentAlignment="Center"
                           HorizontalContentAlignment="Center"
                           BorderBrush="#FF272560"
-                          BorderThickness="2" Width="195"
-                          Background="Black" Text="Válasszon" Foreground="Black" OpacityMask="Black"
-                          >
+                          BorderThickness="1" 
+                          Width="195"
+                          Foreground="Black">
 
                     <ComboBoxItem>Felvett munka</ComboBoxItem>
                     <ComboBoxItem>Elvégzés alatt</ComboBoxItem>
@@ -108,15 +111,20 @@
                     Grid.Column="1"
                     Content="X"
                     Height="28" 
-                    Margin="0,10,10,0" 
-                    Width="33"
-                    Foreground="Turquoise"
-                    Background="Transparent"
-                    HorizontalContentAlignment="Center"
-                    Click="ExitButton_Click" FontWeight="Bold" FontSize="22" HorizontalAlignment="Right" VerticalAlignment="Top">
+                    Margin="1009,10,0,37" 
+                    Width="36"
+                    Click="ExitButton_Click" 
+                    Style="{StaticResource ControlButtonTheme}"/>
 
-            </Button>
 
+
+            <Button x:Name="Tray_Button"
+                    Grid.Column="1" 
+                    Content="-" 
+                    Height="28" 
+                    Margin="977,10,46,37"                    
+                    Click="TrayButton_Click"
+                    Style="{StaticResource ControlButtonTheme}"/>
         </Grid>
 
 

@@ -200,5 +200,15 @@ namespace WebApi_Client_Jobs
         {
             Close();
         }
+
+        public void TrayButton_Click(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
+
+        private void WindowBorder_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
     }
 }
