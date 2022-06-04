@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebApi_Client_Jobs"
         mc:Ignorable="d"
-        Height="700" Width="1280"        
+        Height="700" Width="1500"        
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
+     <Window.DataContext>
+        <Binding RelativeSource="{RelativeSource Mode=Self}"/>
+    </Window.DataContext>
     <Border x:Name="WindowBorder"
             Background="#272560"
             CornerRadius="15"
@@ -80,13 +83,19 @@
                 <ComboBox x:Name="ComboBox" 
                           Margin="20,20,10,20" 
                           HorizontalAlignment="Left"
-                          Background="#202560"
                           VerticalContentAlignment="Center"
                           HorizontalContentAlignment="Center"
+                          Background="LightBlue"
                           BorderBrush="#FF272560"
                           BorderThickness="1" 
-                          Width="195"
-                          Foreground="Black">
+                          Width="195">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="Background" Value="#272560"/>
+                            <Setter Property="BorderBrush" Value="#272560"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
 
                     <ComboBoxItem>Felvett munka</ComboBoxItem>
                     <ComboBoxItem>Elvégzés alatt</ComboBoxItem>
@@ -99,37 +108,62 @@
                             Grid.Column="1"
                             Margin="10">
 
-                <DataGrid Background="#272560" 
-                          x:Name="DataGrid" 
-                          SelectionChanged="DataGrid_SelectionChanged" 
-                          Loaded="OfficeClientJobList_Loaded" 
-                          IsReadOnly="True" 
-                          SelectedItem="{Binding WorkshopDataGrid_SelectedItem, Mode=TwoWay}"/>
+                <DataGrid x:Name="DataGrid"
+                  VerticalScrollBarVisibility="Visible"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  RowHeaderWidth="0"
+                  BorderThickness="0"
+                  ItemsSource="{Binding jobs, UpdateSourceTrigger=PropertyChanged}"
+                  VerticalAlignment="Top"                   
+                  IsReadOnly="True"
+                  SelectionChanged="DataGrid_SelectionChanged"
+                  Style="{StaticResource DataGridTheme}" Height="615">
+                    <!-- HeaderTextBind-->
+                    <DataGrid.Resources>
+                        <Style TargetType="ScrollBar">
+                            <Setter Property="Background" Value="#252760"/>
+                            <Setter Property="Padding" Value="0"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="UseLayoutRounding" Value="True"/>
+
+                        </Style>
+
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                        <DataGridTextColumn Header="Ügyfél" Binding="{Binding Customer}" Width="150"/>
+                        <DataGridTextColumn Header="Autó Típus" Binding="{Binding CarType}" Width="150"/>
+                        <DataGridTextColumn Header="Rendszám" Binding="{Binding LicensePlateNumber}" Width="150"/>
+                        <DataGridTextColumn Header="Dátum" Binding="{Binding Date}" Width="150"/>
+                        <DataGridTextColumn Header="Leírás" Binding="{Binding Description}" Width="300"/>
+                        <DataGridTextColumn Header="Állapot" Binding="{Binding Status}" Width="500"/>
+
+                    </DataGrid.Columns>
+
+
+
+                </DataGrid>
 
             </ContentControl>
             <Button x:Name="ExitButton" 
                     Grid.Column="1"
                     Content="X"
                     Height="28" 
-                    Margin="1009,10,0,37" 
+                    Margin="1220,10,19,37" 
                     Width="36"
                     Click="ExitButton_Click" 
-                    Style="{StaticResource ControlButtonTheme}"/>
-
-
+                    Style="{StaticResource ControlButtonTheme}" RenderTransformOrigin="0.528,0.571"/>
 
             <Button x:Name="Tray_Button"
                     Grid.Column="1" 
                     Content="-" 
                     Height="28" 
-                    Margin="977,10,46,37"                    
+                    Margin="1166,10,60,37"                    
                     Click="TrayButton_Click"
                     Style="{StaticResource ControlButtonTheme}"/>
         </Grid>
-
-
-
     </Border>
-
-
 </Window>

@@ -568,3 +568,7 @@ C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Server.dll
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Common.pdb
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\WebApi_Server.pdb
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\Theme\ControlButtonTheme.baml
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\Theme\DataGridTheme.baml
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\App.baml
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml

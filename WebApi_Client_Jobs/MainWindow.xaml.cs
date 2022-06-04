@@ -23,6 +23,8 @@ namespace WebApi_Client_Jobs
     {
         private long _selectedJobId;
 
+        public List<Job> jobs { get; set; } = (List<Job>)DataProvider.GetJobs();
+
         private readonly Job _job;
         public MainWindow()
         {
@@ -35,7 +37,7 @@ namespace WebApi_Client_Jobs
         private void UpdateJobsToList()
         {
            var jobs = DataProvider.GetJobs();
-           DataGrid.ItemsSource = jobs;
+           DataGrid.ItemsSource = jobs;    
         }
 
         private void Modify_ButtonClick(object sender, RoutedEventArgs e)

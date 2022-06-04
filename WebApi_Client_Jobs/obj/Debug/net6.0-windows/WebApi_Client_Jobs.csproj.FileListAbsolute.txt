@@ -587,3 +587,4 @@ C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Deb
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\TextBoxTheme.baml
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\App.baml
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\ControlButtonTheme.baml
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\DataGridTheme.baml
