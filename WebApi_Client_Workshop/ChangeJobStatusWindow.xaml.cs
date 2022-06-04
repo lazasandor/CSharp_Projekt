@@ -66,6 +66,13 @@ namespace WebApi_Client_Workshop
             DialogResult = true;
             Close();
         }
+        private void WindowBorder_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
 
         internal void ChangeStatusToSelected(Job job)
         {

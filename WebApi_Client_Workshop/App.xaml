@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:WebApi_Client_Workshop"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/DataGridTheme.xaml"/>
+                <ResourceDictionary Source="Theme/ControlButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
