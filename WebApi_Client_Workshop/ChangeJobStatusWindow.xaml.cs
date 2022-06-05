@@ -97,5 +97,10 @@ namespace WebApi_Client_Workshop
                 }
             }
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

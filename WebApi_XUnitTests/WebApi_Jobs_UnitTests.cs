@@ -4,7 +4,7 @@ namespace WebApi_XUnitTests
     {
         WebApi_Client_Jobs.MainWindow window = new WebApi_Client_Jobs.MainWindow();
         [Fact]
-        public void TestCustomerNameValidation()
+        public void TestCustomerNameValidationTest()
         {
             Assert.True(window.CustomerNameValidation("Laza Sandor"));
             Assert.True(window.CustomerNameValidation("Dobos Martin"));
@@ -15,7 +15,9 @@ namespace WebApi_XUnitTests
             Assert.False(window.CustomerNameValidation(" Toth Eszter"));
  
         }
-        public void TestLicensePlateNumberValidation()
+
+        [Fact]
+        public void TestLicensePlateNumberValidationTest()
         {
             Assert.True(window.LicensePlateNumberValidation("ABC-123", false));
             Assert.False(window.LicensePlateNumberValidation("ABc-123", false));

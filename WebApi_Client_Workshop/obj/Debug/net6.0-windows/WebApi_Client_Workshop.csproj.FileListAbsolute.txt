@@ -580,3 +580,7 @@ C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.assert.dll
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.core.dll
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.execution.dotnet.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.assert.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.core.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Workshop\bin\Debug\net6.0-windows\xunit.execution.dotnet.dll
