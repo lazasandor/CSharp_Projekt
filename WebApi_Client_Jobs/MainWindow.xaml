@@ -28,7 +28,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="JobClient"
+            <TextBlock Text="Munkafelvevő Kliens"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Foreground="White"

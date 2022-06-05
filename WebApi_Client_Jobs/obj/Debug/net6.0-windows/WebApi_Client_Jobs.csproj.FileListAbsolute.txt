@@ -588,3 +588,12 @@ C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Deb
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\App.baml
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\ControlButtonTheme.baml
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\DataGridTheme.baml
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\ControlButtonTheme.baml
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\DataGridTheme.baml
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\Theme\TextBoxTheme.baml
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\obj\Debug\net6.0-windows\App.baml
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\bin\Debug\net6.0-windows\xunit.abstractions.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\bin\Debug\net6.0-windows\xunit.assert.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\bin\Debug\net6.0-windows\xunit.core.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Client_Jobs\bin\Debug\net6.0-windows\xunit.execution.dotnet.dll

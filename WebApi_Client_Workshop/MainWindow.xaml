@@ -25,7 +25,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="WorkshopClient"
+            <TextBlock Text="Műhely Kliens | Kattintson egy munkára a módosításhoz!"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Foreground="White"
