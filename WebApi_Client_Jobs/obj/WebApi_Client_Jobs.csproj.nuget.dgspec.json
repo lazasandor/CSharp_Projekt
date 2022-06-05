@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
+    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
+    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
         "projectName": "WebApi_Client_Jobs",
-        "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
-        "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
+        "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\WebApi_Client_Jobs.csproj",
+        "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Client_Jobs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lazas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
-                "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
+              "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+                "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
               },
-              "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj": {
-                "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj"
+              "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj": {
+                "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj"
               }
             }
           }
@@ -80,17 +84,21 @@
         }
       }
     },
-    "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+        "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
         "projectName": "WebApi_Common",
-        "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
-        "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\obj\\",
+        "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj",
+        "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lazas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,17 +142,21 @@
         }
       }
     },
-    "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj": {
+    "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
+        "projectUniqueName": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
         "projectName": "WebApi_Server",
-        "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
-        "packagesPath": "C:\\Users\\dobiv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Server\\obj\\",
+        "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\WebApi_Server.csproj",
+        "packagesPath": "C:\\Users\\lazas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Server\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dobiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lazas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,8 +170,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
-                "projectPath": "C:\\Users\\dobiv\\source\\repos\\lazasandor\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
+              "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj": {
+                "projectPath": "C:\\Users\\lazas\\source\\repos\\CSharp_Projekt\\WebApi_Common\\WebApi_Common.csproj"
               }
             }
           }
@@ -195,6 +207,22 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [

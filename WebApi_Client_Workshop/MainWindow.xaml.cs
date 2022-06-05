@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,6 +17,7 @@ using WebApi_Client_Workshop.DataProviders;
 using WebApi_Common.Models;
 
 
+
 namespace WebApi_Client_Workshop
 {
     /// <summary>
@@ -23,7 +25,7 @@ namespace WebApi_Client_Workshop
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        
         public List<Job> jobs { get; set; } = (List<Job>)DataProviderWorkshop.GetJobs();
 
         private readonly Job _job;
