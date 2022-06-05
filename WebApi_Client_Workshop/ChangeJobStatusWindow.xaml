@@ -57,8 +57,15 @@
 
 
             </StackPanel>
-           
+            <Button x:Name="ExitButton"
+                    Content="X"
+                    Height="28" 
+                    Margin="361,0,0,47" 
+                    Width="36"
+                    Click="ExitButton_Click" 
+                    Style="{StaticResource ControlButtonTheme}"/>
+
         </Grid>
-    </Border>    
-    
+    </Border>
+
 </Window>
