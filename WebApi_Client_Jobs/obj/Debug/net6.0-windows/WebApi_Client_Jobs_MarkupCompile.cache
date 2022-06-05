@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Client_Jobs\App.xaml
-3-1531558016
+5-1229017922
 
 4-884451210
 3841437560258
-MainWindow.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+MainWindow.xaml;Theme\ControlButtonTheme.xaml;Theme\DataGridTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 False
 

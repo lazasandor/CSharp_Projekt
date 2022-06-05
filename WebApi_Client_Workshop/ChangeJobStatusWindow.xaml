@@ -5,24 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebApi_Client_Workshop"
         mc:Ignorable="d"
-        Title="Munka Állapot" Height="300" Width="400">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" Content="Válassza ki a kijelölt munka állapotát!" FontSize="20" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Grid Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Button Grid.Row="0" Content="Felvett munka" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="JobStatusNew_ButtonClick"/>
-            <Button Grid.Row="1" Content="Elvégzés alatt" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="JobStatusWorking_ButtonClick"/>
-            <Button Grid.Row="2" Content="Munka befejezve" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Click="JobStatusDone_ButtonClick"/>
-        </Grid>
-        
+        Title="Munka Állapot" Height="300" Width="400"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
 
-    </Grid>
+
+    <Border x:Name="WindowBorder"
+            Background="#272560"
+            CornerRadius="15"
+            BorderThickness="1.5"
+            BorderBrush="White"
+            MouseDown="WindowBorder_MouseDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Válasszon egy Állapotot!"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20,0,0,0"/>
+            <StackPanel Grid.Row="1">
+                <Button Content="Felvett munka"
+                  
+                        Click="JobStatusNew_ButtonClick"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="14"
+                        Style="{StaticResource MenuButtonTheme}"/>
+
+                <Button Content="Elvégzés alatt"
+                   
+                        Click="JobStatusWorking_ButtonClick"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="14"
+                        Style="{StaticResource MenuButtonTheme}"/>
+
+                <Button Content="Befejezett munka"
+                   
+                        Click="JobStatusDone_ButtonClick"
+                        Height="50"
+                        Foreground="White"
+                        FontSize="14"
+                        Style="{StaticResource MenuButtonTheme}"/>
+
+
+            </StackPanel>
+           
+        </Grid>
+    </Border>    
+    
 </Window>

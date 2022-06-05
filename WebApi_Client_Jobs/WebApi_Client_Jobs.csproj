@@ -29,4 +29,11 @@
     <Resource Include="x-button-icon-20.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Theme\DataGridTheme.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

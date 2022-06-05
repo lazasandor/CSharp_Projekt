@@ -24,6 +24,8 @@ namespace WebApi_Client_Workshop
         private Job _job;
         public ChangeJobStatusWindow(Job job)
         {
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
             InitializeComponent();
 
             if (job != null)
@@ -65,6 +67,13 @@ namespace WebApi_Client_Workshop
             //ChangeStatusToSelected(_job);
             DialogResult = true;
             Close();
+        }
+        private void WindowBorder_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
         }
 
         internal void ChangeStatusToSelected(Job job)

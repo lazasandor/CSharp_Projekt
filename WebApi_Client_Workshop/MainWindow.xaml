@@ -5,15 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebApi_Client_Workshop"
         mc:Ignorable="d"
-        Title="Műhely Kliens" Height="600" Width="1200">
-    <Grid>
+        Title="Műhely Kliens" 
+        Height="700" Width="1280"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Window.DataContext>
+        <Binding RelativeSource="{RelativeSource Mode=Self}"/>
+    </Window.DataContext>
+    <Border x:Name="WindowBorder"
+            Background="#272560"
+            CornerRadius="15"
+            MouseDown="WindowBorder_MouseDown">
+        <Grid>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <DataGrid HorizontalScrollBarVisibility="Auto" x:Name="WorkShop_DataGrid" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="10,10,10,10" SelectionChanged="WorkShop_DataGrid_SelectionChanged" Loaded="WorkshopClientJobList_Loaded" IsReadOnly="True" Background="Transparent" SelectedItem="{Binding WorkshopDataGrid_SelectedItem, Mode=TwoWay}"/>
+            <TextBlock Text="WorkshopClient"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20,0,0,0"/>
 
 
-    </Grid>
+
+            <DataGrid x:Name="WorkShop_DataGrid"
+                  VerticalScrollBarVisibility="Visible"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  RowHeaderWidth="0"
+                  BorderThickness="0"
+                  ItemsSource="{Binding jobs, UpdateSourceTrigger=PropertyChanged}"
+                  VerticalAlignment="Top"                   
+                  IsReadOnly="True"
+                  SelectionChanged="WorkShop_DataGrid_SelectionChanged"
+                  Style="{StaticResource DataGridTheme}" Height="615">
+                <!-- HeaderTextBind-->
+                <DataGrid.Resources>
+                    <Style TargetType="ScrollBar">
+                        <Setter Property="Background" Value="#252760"/>
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="UseLayoutRounding" Value="True"/>
+                        
+                    </Style>
+
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                    <DataGridTextColumn Header="Ügyfél" Binding="{Binding Customer}" Width="150"/>
+                    <DataGridTextColumn Header="Autó Típus" Binding="{Binding CarType}" Width="150"/>
+                    <DataGridTextColumn Header="Rendszám" Binding="{Binding LicensePlateNumber}" Width="150"/>
+                    <DataGridTextColumn Header="Dátum" Binding="{Binding Date}" Width="150"/>
+                    <DataGridTextColumn Header="Leírás" Binding="{Binding Description}" Width="300"/>
+                    <DataGridTextColumn Header="Állapot" Binding="{Binding Status}" Width="500"/>
+
+                </DataGrid.Columns>
+
+
+
+            </DataGrid>
+
+            <Button x:Name="ExitButton"
+                    Content="X"
+                    Height="28" 
+                    Margin="1234,10,10,37" 
+                    Width="36"
+                    Click="ExitButton_Click" 
+                    Style="{StaticResource ControlButtonTheme}"/>
+
+            <Button x:Name="Tray_Button" 
+                    Content="-" 
+                    Height="28" 
+                    Margin="1188,10,51,37"                    
+                    Click="TrayButton_Click"
+                    Style="{StaticResource ControlButtonTheme}"/>
+        </Grid>
+    </Border>
 </Window>

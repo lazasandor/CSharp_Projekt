@@ -23,22 +23,14 @@ namespace WebApi_Client_Workshop
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public List<Job> jobs { get; set; } = (List<Job>)DataProviderWorkshop.GetJobs();
+
         private readonly Job _job;
         public MainWindow()
         {
             _job = new Job();
             InitializeComponent();
-        }
-
-        public void UpdateJobsToList()
-        {
-            var jobs = DataProviderWorkshop.GetJobs();
-            WorkShop_DataGrid.ItemsSource = jobs;
-        }
-
-        private void WorkshopClientJobList_Loaded(object sender, RoutedEventArgs e)
-        {
-            UpdateJobsToList();
         }
 
         private void WorkShop_DataGrid_SelectionChanged(object sender, RoutedEventArgs e)
@@ -50,12 +42,32 @@ namespace WebApi_Client_Workshop
                 var window = new ChangeJobStatusWindow(selectedJob);
                 if (window.ShowDialog() ?? false)
                 {
-                    UpdateJobsToList();
+                    UpdateJobs();
                 }
             }
 
-            
-            
         }
+
+        private void UpdateJobs()
+        {
+            var jobs = DataProviderWorkshop.GetJobs();
+            WorkShop_DataGrid.ItemsSource = jobs;   
+        }
+
+        public void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        public void TrayButton_Click(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
+
+        private void WindowBorder_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
     }
 }
