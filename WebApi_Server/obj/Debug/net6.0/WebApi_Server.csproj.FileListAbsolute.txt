@@ -919,3 +919,7 @@ C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.assert.dll
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.core.dll
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.execution.dotnet.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.assert.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.core.dll
+C:\Users\dobiv\source\repos\lazasandor\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.execution.dotnet.dll

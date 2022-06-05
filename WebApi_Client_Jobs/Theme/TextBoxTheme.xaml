@@ -8,7 +8,7 @@
         <Setter Property="BorderBrush" Value="#004bff"/>
         <Setter Property="Padding" Value="6 3"/>
         <Setter Property="Cursor" Value="IBeam"/>
-        <Setter Property="Foreground" Value="Gray"/>
+        <Setter Property="Foreground" Value="Black"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Width" Value="195"/>
@@ -33,7 +33,7 @@
                                    VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                    Visibility="Collapsed"
-                                   Foreground="Gray"
+                                   Foreground="Black"
                                    Padding="6 3"/>
                         </Grid>
                     </Border>
