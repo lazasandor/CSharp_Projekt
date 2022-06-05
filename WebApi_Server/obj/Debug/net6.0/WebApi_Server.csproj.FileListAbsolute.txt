@@ -915,3 +915,7 @@ C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\runtim
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\WebApi_Common.dll
 C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\WebApi_Common.pdb
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.assert.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.core.dll
+C:\Users\lazas\source\repos\CSharp_Projekt\WebApi_Server\bin\Debug\net6.0\xunit.execution.dotnet.dll

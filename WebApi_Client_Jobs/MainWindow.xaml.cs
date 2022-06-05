@@ -21,6 +21,8 @@ namespace WebApi_Client_Jobs
     
     public partial class MainWindow : Window
     {
+        
+
         private long _selectedJobId;
 
         public List<Job> jobs { get; set; } = (List<Job>)DataProvider.GetJobs();
@@ -49,6 +51,12 @@ namespace WebApi_Client_Jobs
                 var entity = context.Jobs.FirstOrDefault(item => item.Id == _selectedJobId);
                 if (entity != null)
                 {
+
+                    if (!CustomerNameValidation(FullName.Text) || !LicensePlateNumberValidation(RegNumber.Text,true) || !OtherValidations())
+                    {
+                        return;
+                    }
+
                     if (ComboBox.Text.Equals("Befejezett munka"))
                     {
                         MessageBoxResult msgBoxResult = MessageBox.Show("A befejezett munka állapot kiválasztása után\na munka törlődik!\nBiztosan törli?",
@@ -65,17 +73,19 @@ namespace WebApi_Client_Jobs
                         return;
                     }
 
-                    if (ValidateJob())
-                    {
-                        entity.Customer = FullName.Text;
+                    entity.Customer = FullName.Text;
                         entity.CarType = CarType.Text;
                         entity.LicensePlateNumber = RegNumber.Text;
                         entity.Description = TechnicalFailureDesc.Text;
                         entity.Status = ComboBox.Text;
                         context.SaveChanges();
                         MessageBox.Show("Munka sikeresen módosítva!");
-                    }
                     
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Válasszon ki munkát a módosításhoz!");
                 }
             }
             UpdateJobsToList();
@@ -84,75 +94,89 @@ namespace WebApi_Client_Jobs
 
         private void AddNew_ButtonClick(object sender, RoutedEventArgs e)
         {
-
-            if (ValidateJob())
+            if (!CustomerNameValidation(FullName.Text) || !LicensePlateNumberValidation(RegNumber.Text,false) || !OtherValidations())
             {
+                return;
+            }    
 
-                if (IsLicensePlateNumberExists(RegNumber.Text))
-                {
-                    MessageBox.Show("Ez a rendszám már szerepel az adatbázisban!");
-                    ClearTexts();
-                    return;
-                }
+         _job.Customer = FullName.Text;
+         _job.CarType = CarType.Text;
+         _job.LicensePlateNumber = RegNumber.Text;
+         _job.Description = TechnicalFailureDesc.Text;
+         _job.Status = ComboBox.Text;
+         _job.Date = DateTime.Now;
 
-                _job.Customer = FullName.Text;
-                _job.CarType = CarType.Text;
-                _job.LicensePlateNumber = RegNumber.Text;
-                _job.Description = TechnicalFailureDesc.Text;
-                _job.Status = ComboBox.Text;
-                _job.Date = DateTime.Now;
-
-                DataProvider.CreateJob(_job);
-                MessageBox.Show("Munka sikeresen felvételre került!");
-            }
+         DataProvider.CreateJob(_job);
+         MessageBox.Show("Munka sikeresen felvételre került!");
             
-            UpdateJobsToList();
-            ClearTexts();
+            
+         UpdateJobsToList();
+         ClearTexts();
         }
 
-        private bool ValidateJob()
+        public bool LicensePlateNumberValidation(string licensePlateNumber, bool isValidationForModify)
         {
-            if (string.IsNullOrEmpty(FullName.Text))
-            {
-                MessageBox.Show("A név mező nem lehet üres!");
-                return false;
-            }
-            else if (!Regex.Match(FullName.Text, "^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$").Success)
-            {
-                MessageBox.Show("Megadott név formátuma nem megfelelő!");
-                return false;
-            }
-
-            if (string.IsNullOrEmpty(CarType.Text))
-            {
-                MessageBox.Show("A gépjármű típusa mező nem lehet üres!");
-                return false;
-            }
-
-            if (string.IsNullOrEmpty(RegNumber.Text))
+            if (string.IsNullOrEmpty(licensePlateNumber))
             {
                 MessageBox.Show("A rendszám mező nem lehet üres!");
                 return false;
             }
-
-            if (!Regex.Match(RegNumber.Text, "^[A-Z]{3}-[0-9]{3}$").Success && !Regex.Match(RegNumber.Text, "^[A-Z]{2} [A-Z]{2}-[0-9]{3}$").Success)
+            if (!Regex.Match(licensePlateNumber, "^[A-Z]{3}-[0-9]{3}$").Success)
             {
-                MessageBox.Show("Elfogadott rendszám formátum: XXX-123 vagy XX XX-123!");
+                MessageBox.Show("Helytelen rendszám!\nElfogadott rendszám formátum: XXX-123!");
+                return false;
+            }
+            if (IsLicensePlateNumberExists(licensePlateNumber))
+            {
+                if (isValidationForModify)
+                {
+                    return true;
+                }
+                MessageBox.Show("Ez a rendszám már szerepel az adatbázisban!");
                 return false;
             }
 
-            if (string.IsNullOrEmpty(TechnicalFailureDesc.Text))
+            return true;
+        }
+
+        public bool CustomerNameValidation(string customerName)
+        {
+            if (string.IsNullOrEmpty(customerName))
             {
-                MessageBox.Show("A hiba leírás mező nem lehet üres!");
+                MessageBox.Show("A név mező nem lehet üres!");
                 return false;
             }
+            if (!Regex.Match(customerName, "^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$").Success)
+            {
+                MessageBox.Show("Megadott név formátuma nem megfelelő!");
+                return false;
+            }
+            
+            return true;
+        }
 
+        private bool OtherValidations()
+        {
             if (string.IsNullOrEmpty(ComboBox.Text))
             {
                 MessageBox.Show("Válasszon ki egy állapotot!");
                 return false;
             }
-
+            if (string.IsNullOrEmpty(TechnicalFailureDesc.Text))
+            {
+                MessageBox.Show("A hiba leírás mező nem lehet üres!");
+                return false;
+            }
+            if (string.IsNullOrEmpty(CarType.Text))
+            {
+                MessageBox.Show("A gépjármű típusa mező nem lehet üres!");
+                return false;
+            }
+            if (!Regex.Match(CarType.Text, "^[a-zA-Z]{2,}(?: [a-zA-Z]+){0,2}$").Success)
+            {
+                MessageBox.Show("Megadott gépjármű név formátuma nem megfelelő!");
+                return false;
+            }
             return true;
         }
 
